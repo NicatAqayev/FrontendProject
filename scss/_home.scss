@@ -1,0 +1,250 @@
+//NAVIGATION SECTION's CSS STARTED-->
+#navigation{
+    padding: 5px 35px;
+    background-color: #f8f8f8;
+ //Navbar-logo
+    .piller-img{
+        display: inline-block;
+        margin: 13px 0px;
+
+        img{
+            max-width: 75px;
+        }
+    }
+
+ // Navbar links
+    .nav-links{
+        display: inline-block;
+        padding-left: 40px;
+        
+        a{
+            font-size: 11px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin: 0px 10px;
+            color: #767676;
+            text-decoration: none;
+            font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+        }
+    }
+ // Nav-icons
+    .icons{
+        display: inline-block;
+        position: absolute;
+        right: 11px;
+        top: 20px;
+        color: black;
+        i{
+            position: absolute;
+            right: 0px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all .2s;
+            &:hover{
+                opacity: .5;
+                transition: all .2s;
+            }
+        }
+        .first-icon{
+            right: 51px;
+            top: 1px;
+        }
+
+        &::after{
+            content: "";
+            width: 2px;
+            height: 62px;
+            background-color: #f1efef;
+            position: absolute;
+            top: -24px;
+            right: 100px;
+        }
+    }
+}
+//NAVIGATION SECTION's CSS ENDED-->
+
+//INTRO SECTION's CSS STARTED-->
+#intro{
+    .image-class{
+        padding: 0px;
+        .intro-img{          
+            position: relative;
+            background-image: url(../images/home-img/home-img2.jpg);
+            width: 100%;
+            height: 720px;
+            background-attachment: fixed;
+            background-position: 0px -150px;
+            zoom: .86;
+            img{   
+                max-width: 100%;
+            }            
+        }
+        .overlay{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: black;
+            opacity: .3;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+        }
+        .image-text{
+            position: absolute;
+            top: 24%;
+            left: 24%;
+            .image{  
+                img{
+                    width: 80%;
+                }
+            }
+            .text{
+                position: absolute;
+                top: 45px;
+                left: 85%;
+                color: white;
+                width: 500px;
+                 p{
+                    font-size: 24px;
+                    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                    opacity: .8;
+                 }
+            }
+        }
+        .myButton{
+            position: absolute;
+            top: 54%;
+            left: 40%;
+            border-radius: 30px;
+            background-color: #425cbb;
+            padding: 12px 70px 18px 70px;
+            transition: all .2s;
+            span{
+                color: white;
+                font-size: 11px;
+                margin-left: 5px;
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                letter-spacing: 1px;
+                i{
+                    font-size: 9px;
+                    position: absolute;
+                    top: 21px;
+                    left: 45px;
+                }
+            }     
+            &:hover{
+                background-color: #546cc3;
+                border: #546cc3;
+                transition: all .2s;
+            }       
+        }
+        .icons{
+            position: absolute;
+            top: 85%;
+            left: 39%;
+            color: white;
+            font-size: 25px;           
+            i{
+                opacity: .5;
+                margin: 0px 25px;
+                transition: all .5s;
+                &:hover{
+                    opacity: 1;
+                    transition: all .5s;
+                }
+            }
+        }
+    }
+    
+}
+//INTRO SECTION's CSS ENDED-->
+
+// DIGITAL SECTION's CSS STARTED-->
+#digital{
+
+    .header1{
+        text-align: center;
+        h3{
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 33px;
+        }
+        p{
+            font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+            font-size: 23px;
+            color: #767676;
+            padding: 0px 25%;
+        }
+    }
+    .digital-list{
+        list-style: none;
+        font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+        color: #767676;
+        text-align: center;
+        .digital-items{
+            font-family: 'Lora', serif;
+            display: inline-block;
+            &::after{
+                content: "/";
+                opacity: .1;
+            }
+        }
+        .last-item{
+            &::after{
+                content: " ";
+            }
+        }
+    }
+    .digital-images{
+
+        .kart{
+            padding: 0px;
+        }
+        .digital-image{
+            img{
+                max-width: 100%;
+               
+            }
+            .overlay{
+                background-color: #232323;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: .9;
+                display: none;
+                transition: all .3s;
+                h5{
+                    position: absolute;
+                    top: 50px;
+                    right: 35px;
+                    color: white;
+                    display: inline-block;
+                    transition: all .13s;
+                }   
+                span{
+                    position: absolute;
+                    top: 80px;
+                    right: 35px;
+                    color: white;
+                    font-family: 'Lora', serif;
+                    transition: all .13s;
+                }        
+                &:hover h5{
+                    top: 40px;
+                    transition: all .4s;
+                }    
+                &:hover span{
+                    top: 70px;
+                    transition: all .4s;
+                }
+            }
+            &:hover .overlay{
+                display: inline-block;
+                transition: all .3s;
+            }
+        }
+    }
+}
+//DIGITAL SECTION's CSS ENDED-->
