@@ -2,6 +2,10 @@
 #navigation{
     padding: 5px 35px;
     background-color: #f8f8f8;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0px -12px 20px 8px #d4cece;
  //Navbar-logo
     .piller-img{
         display: inline-block;
@@ -71,7 +75,7 @@
             position: relative;
             background-image: url(../images/home-img/home-img2.jpg);
             width: 100%;
-            height: 720px;
+            height: 800px;
             background-attachment: fixed;
             background-position: 0px -150px;
             zoom: .86;
@@ -91,8 +95,8 @@
         }
         .image-text{
             position: absolute;
-            top: 24%;
-            left: 24%;
+            top: 32%;
+            left: 25%;
             .image{  
                 img{
                     width: 80%;
@@ -161,8 +165,111 @@
 
 // DIGITAL SECTION's CSS STARTED-->
 #digital{
+    padding-top: 100px;
+    .digital{
+        padding: 0px;
+        .header{
+            text-align: center;
+            h3{
+                font-size: 35px;
+                font-weight: 700;
+                margin-bottom: 33px;
+            }
+            p{
+                font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                font-size: 23px;
+                color: #767676;
+                padding: 0px 25%;
+            }
+        }
+        .digital-list{
+            list-style: none;
+            font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+            color: #767676;
+            text-align: center;
+            
+            .digital-items{
+                font-family: 'Lora', serif;
+                display: inline-block;
+                cursor: pointer;
+                opacity: .5;
+                transition: all .3s;
+                &::after{
+                    content: "/";
+                    opacity: .3;
+                }
+                &:hover{
+                    opacity: 1;
+                    transition: all .3s;
+                }
+            }
+            .last-item{
+                &::after{
+                    content: " ";
+                }
+            }
+            
+        }
+        .digital-images{
+    
+            .kart{
+                padding: 0px;
+            }
+            .digital-image{
+                img{
+                    max-width: 100%;
+                   
+                }
+                .overlay{
+                    // transition: all .3s;
+                    background-color: #232323;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: .9;
+                    display: none;
+                    h5{
+                        position: absolute;
+                        top: 50px;
+                        right: 35px;
+                        color: white;
+                        display: inline-block;
+                    }   
+                    span{
+                        position: absolute;
+                        top: 80px;
+                        right: 35px;
+                        color: white;
+                        font-style: italic;
+                        font-family: 'lora';
+                    }        
+                    &:hover h5{
+                        top: 40px;
+                        transition: all .4s;
+                    }    
+                    &:hover span{
+                        top: 70px;
+                        transition: all .4s;
+                    }
+                }
+                &:hover .overlay{
+                    
+                    display: inline-block;
+                    transition: all .3s;
+                
+                }
+            }
+        }
+    }
+}
+//DIGITAL SECTION's CSS ENDED-->
 
-    .header1{
+// COLLEKTIVE SECTION's CSS STARTED-->
+#collective{
+    padding: 100px 0px;
+    .header{
         text-align: center;
         h3{
             font-size: 35px;
@@ -172,40 +279,20 @@
         p{
             font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
             font-size: 23px;
+            padding: 0px 16%;
             color: #767676;
-            padding: 0px 25%;
+            margin: 4% 0px 7% 0px;
         }
     }
-    .digital-list{
-        list-style: none;
-        font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
-        color: #767676;
-        text-align: center;
-        .digital-items{
-            font-family: 'Lora', serif;
-            display: inline-block;
-            &::after{
-                content: "/";
-                opacity: .1;
-            }
-        }
-        .last-item{
-            &::after{
-                content: " ";
-            }
-        }
-    }
-    .digital-images{
+    .collective-images{
 
-        .kart{
-            padding: 0px;
-        }
-        .digital-image{
+        .collective-image{
+
             img{
                 max-width: 100%;
-               
             }
             .overlay{
+                transition: all .3s;
                 background-color: #232323;
                 position: absolute;
                 top: 0;
@@ -214,29 +301,48 @@
                 height: 100%;
                 opacity: .9;
                 display: none;
-                transition: all .3s;
+                text-align: center;
+                color: white;
+                .icons {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 24%;
+                
+                    i{
+                        opacity: .5;
+                        margin: 0px 15px;
+                        transition: all .3s;
+                        &:hover{
+                            opacity: 1;
+                            transition: all .3s;
+                        }
+                    }
+                }
                 h5{
                     position: absolute;
-                    top: 50px;
-                    right: 35px;
-                    color: white;
-                    display: inline-block;
-                    transition: all .13s;
-                }   
-                span{
-                    position: absolute;
-                    top: 80px;
-                    right: 35px;
-                    color: white;
-                    font-family: 'Lora', serif;
-                    transition: all .13s;
-                }        
-                &:hover h5{
-                    top: 40px;
+                    left: 44%;
+                    top: 42%;
+                    font-size: 11px;
+                    opacity: .7;
+                    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                    letter-spacing: 1px;
                     transition: all .4s;
-                }    
-                &:hover span{
-                    top: 70px;
+                }
+                h2{
+                    position: absolute;
+                    top: 47%;
+                    left: 37%;
+                    font-size: 17px;
+                    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                    font-weight: 700;
+                    transition: all .4s;
+                }
+                &:hover h5{
+                    left: 42%;
+                    transition: all .4s;
+                }
+                &:hover h2{
+                    left: 35%;
                     transition: all .4s;
                 }
             }
@@ -247,4 +353,457 @@
         }
     }
 }
-//DIGITAL SECTION's CSS ENDED-->
+// COLLECTIVE SECTION's CSS ENDED-->
+
+// MEMBERS SECTION's CSS STARTED-->
+#members{
+    padding: 100px 0px;
+    .members-image{
+        background-image: url(../images/Members-image/image1.jpg);
+        background-attachment: fixed;
+        width: 100%;
+        height: 450px;
+        background-position-y: -270px;
+        zoom: .9;
+        padding: 0px;
+        .overlay{
+            background-color: black;
+            opacity: .7;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        .members-card{
+            color: white;
+            padding: 0px;
+            .icons{
+                text-align: center;
+                font-size: 70px;
+                margin-top: 35%;
+                i{
+    
+    
+                }
+            }
+            .members-text{
+                text-align: center;
+                h2{
+                    font-size: 37px;
+                    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                    font-weight: 800;
+                    margin: 10px 0px 17px 0px;
+                }
+                span{
+                    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                    font-style: italic;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+// MEMBERS SECTION's CSS ENDED-->
+
+// EXPERTISE SECTION's CSS STARTED-->
+#expertise{
+
+    .header{
+        text-align: center;
+        h3{
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 33px;
+        }
+        p{
+            font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+            font-size: 23px;
+            padding: 0px 16%;
+            color: #767676;
+            margin: 4% 0px 7% 0px;
+        }
+    }
+   .expertise-card {
+    display: flex;
+    padding: 35px;
+    
+    .icons{
+        display: inline-block;
+        font-size: 45px;
+        margin-right: 25px;
+        i{
+            color: #425cbb;
+        }
+    }
+    .expertise-text{
+
+        h2{
+            display: inline-block;
+            font-size: 11px;
+            font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+            letter-spacing: 2px;
+            opacity: .6;
+            margin-bottom: 30px;
+        }
+        }
+        p{
+            font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+            color: #767676;
+            font-weight: 400;
+        }
+    }
+}
+// EXPERTISE SECTION's CSS ENDED-->
+
+// EXPERTISE-IMAGE SECTION's CSS STARTED-->
+#expertise-image{
+    position: relative;
+    .image-card{
+
+        .image{
+            display: inline-block;
+            img{
+                width: 70%;
+            }
+        }
+        .ex-img-text{
+            position: absolute;
+            top: 45%;
+            right: -60px;
+            padding-left: 51%;
+            p{
+                font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                font-style: italic;
+                font-size: 25px;
+                color: #767676;
+            }
+            h2{
+                font-size: 17px;
+                font-weight: 700;
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                margin-bottom: 20px;
+                margin-left: 10px;
+            }
+            h3{
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                font-size: 11px;
+                letter-spacing: 1px;
+                opacity: .8;
+                margin-left: 10px;
+            }
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 18%;
+        left: 0%;
+        width: 100%;
+        height: 82%;
+        background: #f4f4f4;
+        z-index: -1;
+    }
+}
+// EXPERTISE-IMAGE SECTION's CSS ENDED-->
+
+// VIEWS SECTION's CSS STARTED-->
+#views{
+    padding: 100px 0px;
+    .header{
+        text-align: center;
+        h3{
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 33px;
+        }
+        p{
+            font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+            font-size: 23px;
+            padding: 0px 16%;
+            color: #767676;
+            margin: 4% 0px 7% 0px;
+        }
+    }
+    .views-cards{
+        display: flex;
+        a{
+            text-decoration: none;
+            .views-card{
+                background-color: white;
+                &:hover .views-text{
+                    box-shadow: 0px 14px 30px 1px #e4e3e3;
+                    transition: all .2s;
+                }
+                .views-image{
+        
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .views-text{
+                    font-family: 'Montserrat', sans-serif;
+                    padding: 30px 16px;
+                    transition: all .2s;
+                
+                    h2{
+                        font-size: 11px;
+                        margin: 0px 0px 15px 0px;
+                        color: #767676;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        opacity: .8;
+                        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                    }
+                    p{
+                        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: black;
+                    }
+                    h3{
+                        font-size: 11px;
+                        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                        letter-spacing: 1px;
+                        color: #767676;
+                        margin-top: 25%;
+                        span{
+                            font-style: italic;
+                            font-size: 10px;
+                            font-family: 'Lora', serif;
+                        }
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            bottom: 16%;
+                            left: 10%;
+                            width: 80%;
+                            height: 1px;
+                            background-color: #767676;
+                            opacity: .1;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    
+    .mybutton{
+        text-align: center;
+        margin-top: 10%;
+        button{
+            border-radius: 30px;
+            border: 2px solid rgba(35, 35, 35, 0.1);
+            padding: 10px 50px;
+            background-color: transparent;
+            transition: all .2s;
+            cursor: pointer;
+            h1{
+                font-size: 10px;
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                margin-top: 6px;
+                letter-spacing: 1px;
+            }
+            &:hover{
+                border-color: black;
+                transition: all .2s;
+            }
+        }
+    }
+}
+// VIEWS SECTION's CSS ENDED-->
+
+// CAROUSEL SECTION's CSS STARTED-->
+#carousel{
+    padding: 80px 0px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    .slide-inner{
+        display: flex;
+        .slide-item{
+            display: inline-block;
+            text-align: center;
+            width: 200px;
+            margin: 0px 5px;
+            img{
+                width: 60%;
+                opacity: .4;
+            }
+        }
+    }
+}
+// CAROUSEL SECTION's CSS ENDED-->
+
+// INTERESTED SECTION's CSS STARTED-->
+#interested{
+    padding:5% 24% 4% 24%;
+    background: #425cbb;
+    .interested-text{
+        display: flex;
+        position: relative;
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 25px;
+            color: white;
+        }
+        .mybutton{
+            position: absolute;
+            top: 9%;
+            right: 0%;
+            a{
+                border: 2px solid rgba(255, 255, 255, 0.1);
+                padding: 8px 33px 15px 33px;
+                border-radius: 30px;
+                transition: all 0.2s;
+                cursor: pointer;
+                span{
+                    color: white;
+                    font-size: 11px;
+                    letter-spacing: 1px;
+                    opacity: .7;
+                }
+                &:hover{
+                    border-color: rgba(255, 255, 255, 0.6);
+                    transition: all 0.2s;
+                }
+            }
+        }
+    }
+    
+}
+// INTERESTED SECTION's CSS ENDED-->
+
+// FOOTER's CSS STARTED-->
+#footer{
+    background-color: black;
+    opacity: .9;
+    padding: 100px 0px;
+    .footer-cards{
+        display: flex;
+        .melbourne-card{
+            padding: 0px 11%;
+            .melbourne-img{
+                margin: 0% 0px 6% 12%;
+                img{
+                    width: 33%;
+                }
+            }
+            .melbourne-text{
+
+                span{
+                    margin-left: 12%;
+                    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                    font-style: italic;
+                    color: white;
+                }
+                ul{
+                    list-style: none;
+                        padding: 8% 50% 0px 9%;
+                    li{
+                        display: inline-block;
+                        margin: 10px 10px;
+                        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                        font-size: 10px;
+                        color: white;
+                        opacity: .5;
+                        letter-spacing: 1px;
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        &:hover{
+                            opacity: 1;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+        .recent-card{
+    
+            span{
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                color: white;
+                font-size: 11px;
+                letter-spacing: 1px;
+            }
+            p{
+                font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                color: white;
+                padding: 5% 12% 0% 0px;
+            }
+        }
+        .subscribe-card{
+    
+            span{
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                color: white;
+                font-size: 11px;
+                letter-spacing: 1px;
+            }
+            p{
+                font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                color: white;
+                margin-top: 20px;
+            }
+            .int-btn{
+                display: inline-block;
+                input{
+                    border-radius: 50px 0px 0px 50px;
+                    position: relative;
+                    padding: 14px 25px;
+                    &::placeholder{
+                        font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                        font-style: italic;
+                        opacity: .7;
+                    }
+                }
+                a{
+                    position: absolute;
+                    right: 27%;
+                    border-radius: 0 50px 50px 0;
+                    background: #425cbb;
+                    padding: 16px 30px;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            h1{
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                color: white;
+                font-size: 11px;
+                letter-spacing: 1px;
+                margin: 16% 0px 10% 0px;
+            }
+            .icons{
+                display: flex;
+                justify-content: space-around;
+                width: 60%;
+                 i{
+                    font-size: 17px;
+                    color: white;
+                    opacity: .4;
+                    transition: all .3s;
+                    &:hover{
+                        opacity: 1;
+                        transition: all .3s;
+                    }
+                 }
+            }
+        }
+        
+    }
+}
+#footer-end{
+    padding: 40px 0px;
+    background-color: black;
+    opacity: .91;
+    .footer-end{
+
+        span{
+            color: white;
+            opacity: .3;
+            font-size: 15px;
+        }
+    }
+}
+// FOOTER's CSS ENDED-->
