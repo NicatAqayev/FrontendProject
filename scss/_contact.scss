@@ -1,0 +1,225 @@
+//INTERFACE SECTION's CSS STARTED-->
+#something{
+
+    .business-card{
+        padding: 0px;
+        .business-image{
+            background-image: url(../images/Contact-page-images/Something-images/image1.jpg);
+            background-attachment: fixed;
+            height: 600px;
+            background-position: -100px -150px;
+            zoom: .9;
+            .overlay{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: #232323;
+                width: 100%;
+                height: 100%;
+                opacity: .6;
+            }
+        }
+        .business-text{
+            position: absolute;
+            top: 35%;
+            left: 0%;
+            color: white;
+            text-align: center;
+            h1{
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                font-weight: 600;
+                font-size: 33px;
+                margin-bottom: 30px;
+            }
+            p{
+                padding: 0px 17%;
+                font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                font-size: 23px;
+                line-height: 42px;
+            }
+        }
+    }
+}
+//INTERFACE SECTION's CSS ENDED-->
+
+//CONNECTION SECTION's CSS STARTED-->
+#connection{
+
+    .parts{
+        padding: 100px;
+        .icons{
+            text-align: center;
+            i{
+                font-size: 60px;
+            }
+        }
+        .card-text{
+            text-align: center;
+            h1{
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                font-weight: 600;
+                font-size: 25px;
+                margin: 30px 0px;
+            }
+            p{
+                color: #767676;
+                font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+            }
+        }
+    }
+    .first-part{
+        background-color: white;
+    }
+    .second-part{
+       background-color: #f4f4f4; 
+    }
+    .third-part{
+        background-color: black;
+        opacity: .9;
+        color: white;
+        .card-text{
+
+            h1{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+        }
+    }
+}
+//CONNECTION SECTION's CSS ENDED-->
+
+//REACH SECTION's CSS STARTED-->
+#reach{
+    padding: 100px 0px;
+    .header{
+
+        h2{
+            font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+            text-align: center;
+            font-weight: 600;
+            font-size: 25px;
+            margin: 30px 0px;
+        }
+    }
+    .myinput1{
+        text-align: center;
+        .icons{
+            position: absolute;
+            left: 17%;
+            top: 0px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            i{
+                font-size: 25px;
+                opacity: .3;
+            }
+        }
+        input{
+            width: 65%;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 30px;
+            &::placeholder{
+                font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                font-style: italic;
+                opacity: .5;
+            }
+        }
+    }
+    .myinput2{
+        display: flex;
+        .myinput3{
+            display: flex;
+            justify-content: flex-end;
+            margin: 30px 0px;
+            .icons{
+                position: absolute;
+                left: 32%;
+                top: 0px;
+                border-radius: 5px;
+                background-color: white;
+                padding: 10px;
+                i{
+                    font-size: 25px;
+                    opacity: .3;
+                }
+            }
+            input{
+                width: 62%;
+                border: 2px solid white;
+                padding: 10px;
+                border-radius: 5px;
+                &::placeholder{
+                    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                    font-style: italic;
+                    opacity: .5;
+                }
+            }
+        }
+        .myinput4{
+            margin: 30px 0px;
+            .icons{
+                position: absolute;
+                left: 4%;
+                top: 0px;
+                border-radius: 5px;
+                background-color: white;
+                padding: 8px;
+                i{
+                    font-size: 30px;
+                    opacity: .3;
+                }
+            }
+            input{
+                width: 62%;
+                border: 2px solid white;
+                padding: 10px;
+                border-radius: 5px;
+                margin-left: 7%;
+                &::placeholder{
+                    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                    font-style: italic;
+                    opacity: .5;
+                }
+            }
+        }
+    }
+    .area{
+        text-align: center;
+        padding: 0px 16%;
+        .mytextarea{
+            padding: 20px;
+            width: 100%;
+            height: 190px;
+            border: 2px solid white;
+            border-radius: 5px;
+            &::placeholder{
+                font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                font-style: italic;
+                opacity: .5;
+            }
+        }
+    }
+    .button{
+        text-align: center;
+        padding: 0px 16%;
+        .mybutton{
+            background-color: #425cbb;
+            padding: 15px 0px;
+            text-align: center;
+            margin: 30px 0px;
+            a{
+                text-decoration: none;
+                color: white;
+                letter-spacing: 1px;
+                font-size: 12px;
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+            }
+        }
+    }
+}
+//REACH SECTION's CSS ENDED-->

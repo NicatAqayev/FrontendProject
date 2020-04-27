@@ -1,0 +1,142 @@
+//SERVICE SECTION's CSS STARTED-->
+#service{
+
+    .service-part{
+        padding: 0px;
+        .service-image{
+            display: inline-block;
+            height: 500px;
+            overflow: hidden;
+            background-image: url(../images/About-section-images/Services-images/image1.jpg);
+            background-attachment: fixed;
+            width: 100%;
+            background-position: -100px -150px;
+            zoom: .9;
+            .overlay{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: #232323;
+                width: 100%;
+                height: 99%;
+                opacity: .8;
+            }
+        }
+        .service-text{
+            position: absolute;
+            top: 35%;
+            left: 0%;
+            color: white;
+            text-align: center;
+            h1{
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                font-weight: 600;
+                font-size: 33px;
+                margin-bottom: 30px;
+            }
+            p{
+                padding: 0px 17%;
+                font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                font-size: 23px;
+                line-height: 42px;
+            }
+        }
+    }
+}
+//SERVICE SECTION's CSS ENDED-->
+
+//INTERFACE SECTION's CSS STARTED-->
+#interface{
+    margin-top: -100px;
+    padding-bottom: 100px;
+    .part{
+        margin-bottom: 30px;
+        .interface-card{
+            z-index: 3;
+            .icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 80px 90px;
+                background-color: #f4f4f4;
+                i{
+                    font-size: 65px;
+                }
+            }
+            .interface-text{
+                background-color: white;
+                padding: 40px;
+                h2{
+                    font-size: 16px;
+                    margin-bottom: 30px;
+                    font-weight: 700;
+                    letter-spacing: .5px;
+                }
+                p{
+                    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                    color: #767676;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+//INTERFACE SECTION's CSS ENDED-->
+
+//BUSINESS SECTION's CSS STARTED-->
+#business{
+
+    .business-card{
+        padding: 0px;
+        .business-image{
+            background-image: url(../images/About-section-images/Business-images/image1.jpg);
+            background-attachment: fixed;
+            width: 100%;
+            height: 350px;
+            zoom: .85;
+            .overlay{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: #232323;
+                width: 100%;
+                height: 100%;
+                opacity: .5;
+            }
+        }
+        .business-text{
+            position: absolute;
+            top: 33%;
+            left: 33%;
+            h1{
+                font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                font-weight: 600;
+                font-size: 26px;
+                color: white;
+                margin-bottom: 10%;
+            }
+            .mybutton{
+                text-align: center;
+                a{
+                    background-color: #425cbb;
+                    padding: 13px 40px 18px 40px;
+                    border-radius: 30px;
+                    transition: all .2s;
+                    text-decoration: none;
+                    span{
+                        color: white;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        opacity: .8;
+                    }
+                    &:hover{
+                        background-color: #546cc3;
+                        border: #546cc3;
+                        transition: all .2s;
+                    }
+                }               
+            }
+        }
+    }
+}
+//BUSINESS SECTION's CSS ENDED-->

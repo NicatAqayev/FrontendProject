@@ -76,7 +76,7 @@
 
 #intro .image-class .intro-img {
   position: relative;
-  background-image: url(../images/home-img/home-img2.jpg);
+  background-image: url(../images/Home-page-images/Home-images/home-img2.jpg);
   width: 100%;
   height: 800px;
   background-attachment: fixed;
@@ -393,7 +393,7 @@
 }
 
 #members .members-image {
-  background-image: url(../images/Members-image/image1.jpg);
+  background-image: url(../images/Home-page-images/Members-image/image1.jpg);
   background-attachment: fixed;
   width: 100%;
   height: 450px;
@@ -904,5 +904,488 @@
   color: white;
   opacity: .3;
   font-size: 15px;
+}
+
+#service .service-part {
+  padding: 0px;
+}
+
+#service .service-part .service-image {
+  display: inline-block;
+  height: 500px;
+  overflow: hidden;
+  background-image: url(../images/About-section-images/Services-images/image1.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  background-position: -100px -150px;
+  zoom: .9;
+}
+
+#service .service-part .service-image .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #232323;
+  width: 100%;
+  height: 99%;
+  opacity: .8;
+}
+
+#service .service-part .service-text {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  color: white;
+  text-align: center;
+}
+
+#service .service-part .service-text h1 {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 33px;
+  margin-bottom: 30px;
+}
+
+#service .service-part .service-text p {
+  padding: 0px 17%;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-size: 23px;
+  line-height: 42px;
+}
+
+#interface {
+  margin-top: -100px;
+  padding-bottom: 100px;
+}
+
+#interface .part {
+  margin-bottom: 30px;
+}
+
+#interface .part .interface-card {
+  z-index: 3;
+}
+
+#interface .part .interface-card .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 90px;
+  background-color: #f4f4f4;
+}
+
+#interface .part .interface-card .icons i {
+  font-size: 65px;
+}
+
+#interface .part .interface-card .interface-text {
+  background-color: white;
+  padding: 40px;
+}
+
+#interface .part .interface-card .interface-text h2 {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+#interface .part .interface-card .interface-text p {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  color: #767676;
+  font-weight: 400;
+}
+
+#business .business-card {
+  padding: 0px;
+}
+
+#business .business-card .business-image {
+  background-image: url(../images/About-section-images/Business-images/image1.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: 350px;
+  zoom: .85;
+}
+
+#business .business-card .business-image .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #232323;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+#business .business-card .business-text {
+  position: absolute;
+  top: 33%;
+  left: 33%;
+}
+
+#business .business-card .business-text h1 {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: white;
+  margin-bottom: 10%;
+}
+
+#business .business-card .business-text .mybutton {
+  text-align: center;
+}
+
+#business .business-card .business-text .mybutton a {
+  background-color: #425cbb;
+  padding: 13px 40px 18px 40px;
+  border-radius: 30px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-decoration: none;
+}
+
+#business .business-card .business-text .mybutton a span {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: .8;
+}
+
+#business .business-card .business-text .mybutton a:hover {
+  background-color: #546cc3;
+  border: #546cc3;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#something .business-card {
+  padding: 0px;
+}
+
+#something .business-card .business-image {
+  background-image: url(../images/Contact-page-images/Something-images/image1.jpg);
+  background-attachment: fixed;
+  height: 600px;
+  background-position: -100px -150px;
+  zoom: .9;
+}
+
+#something .business-card .business-image .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #232323;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+}
+
+#something .business-card .business-text {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  color: white;
+  text-align: center;
+}
+
+#something .business-card .business-text h1 {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 33px;
+  margin-bottom: 30px;
+}
+
+#something .business-card .business-text p {
+  padding: 0px 17%;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-size: 23px;
+  line-height: 42px;
+}
+
+#connection .parts {
+  padding: 100px;
+}
+
+#connection .parts .icons {
+  text-align: center;
+}
+
+#connection .parts .icons i {
+  font-size: 60px;
+}
+
+#connection .parts .card-text {
+  text-align: center;
+}
+
+#connection .parts .card-text h1 {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 30px 0px;
+}
+
+#connection .parts .card-text p {
+  color: #767676;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+}
+
+#connection .first-part {
+  background-color: white;
+}
+
+#connection .second-part {
+  background-color: #f4f4f4;
+}
+
+#connection .third-part {
+  background-color: black;
+  opacity: .9;
+  color: white;
+}
+
+#connection .third-part .card-text h1 {
+  color: white;
+}
+
+#connection .third-part .card-text p {
+  color: white;
+}
+
+#reach {
+  padding: 100px 0px;
+}
+
+#reach .header h2 {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 30px 0px;
+}
+
+#reach .myinput1 {
+  text-align: center;
+}
+
+#reach .myinput1 .icons {
+  position: absolute;
+  left: 17%;
+  top: 0px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#reach .myinput1 .icons i {
+  font-size: 25px;
+  opacity: .3;
+}
+
+#reach .myinput1 input {
+  width: 65%;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+#reach .myinput1 input::-webkit-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput1 input:-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput1 input::-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput1 input::placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#reach .myinput2 .myinput3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 30px 0px;
+}
+
+#reach .myinput2 .myinput3 .icons {
+  position: absolute;
+  left: 32%;
+  top: 0px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+#reach .myinput2 .myinput3 .icons i {
+  font-size: 25px;
+  opacity: .3;
+}
+
+#reach .myinput2 .myinput3 input {
+  width: 62%;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#reach .myinput2 .myinput3 input::-webkit-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput2 .myinput3 input:-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput2 .myinput3 input::-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput2 .myinput3 input::placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput2 .myinput4 {
+  margin: 30px 0px;
+}
+
+#reach .myinput2 .myinput4 .icons {
+  position: absolute;
+  left: 4%;
+  top: 0px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 8px;
+}
+
+#reach .myinput2 .myinput4 .icons i {
+  font-size: 30px;
+  opacity: .3;
+}
+
+#reach .myinput2 .myinput4 input {
+  width: 62%;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 7%;
+}
+
+#reach .myinput2 .myinput4 input::-webkit-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput2 .myinput4 input:-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput2 .myinput4 input::-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .myinput2 .myinput4 input::placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .area {
+  text-align: center;
+  padding: 0px 16%;
+}
+
+#reach .area .mytextarea {
+  padding: 20px;
+  width: 100%;
+  height: 190px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#reach .area .mytextarea::-webkit-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .area .mytextarea:-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .area .mytextarea::-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .area .mytextarea::placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .5;
+}
+
+#reach .button {
+  text-align: center;
+  padding: 0px 16%;
+}
+
+#reach .button .mybutton {
+  background-color: #425cbb;
+  padding: 15px 0px;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+#reach .button .mybutton a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
