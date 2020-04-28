@@ -4,8 +4,8 @@
   position: fixed;
   z-index: 99;
   width: 100%;
-  -webkit-box-shadow: 0px -12px 20px 8px #d4cece;
-          box-shadow: 0px -12px 20px 8px #d4cece;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.07);
 }
 
 #navigation .piller-img {
@@ -1387,5 +1387,516 @@
   letter-spacing: 1px;
   font-size: 12px;
   font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+}
+
+#navigation-top {
+  background-color: #f4f4f4;
+  padding: 0px 25px;
+}
+
+#navigation-top .navigation-top-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px;
+}
+
+#navigation-top .navigation-top-card .navigation-top-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #767676;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  padding: 6px 0px 0px 0px;
+}
+
+#navigation-top .navigation-top-card .navigation-top-text h5 {
+  margin: 0px 20px;
+  font-size: 11px;
+}
+
+#navigation-top .navigation-top-card .navigation-top-text h6 {
+  font-size: 11px;
+}
+
+#navigation-top .navigation-top-card .icons {
+  font-size: 14px;
+}
+
+#navigation-top .navigation-top-card .icons i {
+  opacity: .5;
+  margin: 0px 15px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#navigation-top .navigation-top-card .icons i:hover {
+  opacity: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#shop-card {
+  padding: 150px;
+}
+
+#shop-card .header {
+  text-align: center;
+}
+
+#shop-card .header h1 {
+  font-size: 65px;
+  font-weight: 900;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+}
+
+#shop-card .header p {
+  color: #767676;
+  font-size: 25px;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+}
+
+#shop-card ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5% 0px;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+}
+
+#shop-card ul li {
+  margin: 10px 5px;
+  opacity: .4;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#shop-card ul li::after {
+  content: " / ";
+  color: black;
+  margin-left: 10px;
+  opacity: .3;
+}
+
+#shop-card ul li:hover {
+  opacity: .9;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#shop-card .shop-card-cards .shop-card-card {
+  margin-bottom: 30px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+#shop-card .shop-card-cards .shop-card-card .shop-card-image img {
+  max-width: 100%;
+}
+
+#shop-card .shop-card-cards .shop-card-card .shop-card-text {
+  background-color: white;
+  padding: 40px;
+}
+
+#shop-card .shop-card-cards .shop-card-card .shop-card-text .first-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#shop-card .shop-card-cards .shop-card-card .shop-card-text .first-part h1 {
+  font-size: 11px;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  text-transform: uppercase;
+  opacity: .3;
+}
+
+#shop-card .shop-card-cards .shop-card-card .shop-card-text .first-part h2 {
+  font-size: 16px;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+#shop-card .shop-card-cards .shop-card-card .shop-card-text .first-part h3 {
+  font-size: 20px;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  opacity: .7;
+}
+
+#shop-card .shop-card-cards .shop-card-card .shop-card-text .second-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#shop-card .shop-card-cards .shop-card-card .shop-card-text .second-part h1 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#shop-card .shop-card-cards .shop-card-card .shop-card-text .second-part h2 {
+  font-size: 16px;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  opacity: .7;
+}
+
+#shop-card .shop-card-cards .shop-card-card:hover {
+  -webkit-box-shadow: 0px 0px 25px 0px #e4e2e2;
+          box-shadow: 0px 0px 25px 0px #e4e2e2;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#shop-card .pages-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#shop-card .pages-numbers i {
+  cursor: pointer;
+}
+
+#shop-card .pages-numbers .left {
+  margin: 10px 9px;
+  font-size: 14px;
+  opacity: .5;
+}
+
+#shop-card .pages-numbers .right {
+  font-size: 14px;
+  opacity: .5;
+  margin: 10px 5px;
+}
+
+#shop-card .pages-numbers .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#shop-card .pages-numbers .numbers a {
+  width: 35px;
+  height: 35px;
+  line-height: 25px;
+  text-decoration: none;
+  color: black;
+  opacity: .9;
+  font-size: 10px;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  margin: 0px 5px;
+  padding: 6px 5px 11px 15px;
+  border-radius: 50%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#shop-card .pages-numbers .numbers a:hover {
+  background-color: #ececec;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#shop-card .pages-numbers .numbers .number-one {
+  background-color: #ececec;
+}
+
+#footer .footer-icon a {
+  display: inline-block;
+  position: absolute;
+  bottom: -30%;
+  right: 12%;
+  background-color: #3d3d3d;
+  padding: 15px 20px;
+  border-radius: 50%;
+  opacity: 2;
+  z-index: 9;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#footer .footer-icon a i {
+  color: white;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#footer .footer-icon a:hover {
+  bottom: -28%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#footer span {
+  color: white;
+  opacity: .3;
+  font-size: 15px;
+}
+
+#login .login-page {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#login .login-page .login-first {
+  padding: 0px;
+}
+
+#login .login-page .login-first img {
+  max-width: 100%;
+}
+
+#login .login-page .login-second {
+  text-align: center;
+  padding: 50px 0px;
+  background-color: white;
+  padding: 100px 0px;
+}
+
+#login .login-page .login-second .header .header-img img {
+  max-width: 100%;
+  width: 140px;
+  margin-bottom: 2%;
+}
+
+#login .login-page .login-second .header p {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-size: 23px;
+  color: #767676;
+  margin-bottom: 10%;
+}
+
+#login .login-page .login-second .login-input .int-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#login .login-page .login-second .login-input .int-header h3 {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-size: 12px;
+  opacity: .7;
+  letter-spacing: 1px;
+  margin: 20px 0px 20px 26%;
+}
+
+#login .login-page .login-second .login-input .input-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login .login-page .login-second .login-input .input-1 i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  border-radius: 30px 0px 0px 30px;
+  background-color: #f8f8f8;
+  opacity: .5;
+}
+
+#login .login-page .login-second .login-input .input-1 input {
+  border: #f8f8f8;
+  border-radius: 0px 30px 30px 0px;
+  padding: 15px 130px 15px 15px;
+  background-color: #f8f8f8;
+}
+
+#login .login-page .login-second .login-input .input-1 input::-webkit-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .3;
+}
+
+#login .login-page .login-second .login-input .input-1 input:-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .3;
+}
+
+#login .login-page .login-second .login-input .input-1 input::-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .3;
+}
+
+#login .login-page .login-second .login-input .input-1 input::placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .3;
+}
+
+#login .login-page .login-second .login-input .input-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login .login-page .login-second .login-input .input-2 i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  border-radius: 30px 0px 0px 30px;
+  background-color: #f8f8f8;
+  opacity: .5;
+}
+
+#login .login-page .login-second .login-input .input-2 input {
+  border: #f8f8f8;
+  border-radius: 0px 30px 30px 0px;
+  padding: 15px 130px 15px 15px;
+  background-color: #f8f8f8;
+}
+
+#login .login-page .login-second .login-input .input-2 input::-webkit-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .3;
+}
+
+#login .login-page .login-second .login-input .input-2 input:-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .3;
+}
+
+#login .login-page .login-second .login-input .input-2 input::-ms-input-placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .3;
+}
+
+#login .login-page .login-second .login-input .input-2 input::placeholder {
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  opacity: .3;
+}
+
+#login .login-page .login-second .input-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0px;
+}
+
+#login .login-page .login-second .input-checkbox .checkbox {
+  background-color: #ececec;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#login .login-page .login-second .input-checkbox .checkbox i {
+  font-size: 15px;
+}
+
+#login .login-page .login-second .input-checkbox span {
+  color: #767676;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+  font-size: 11px;
+  text-align: center;
+  margin: 7px 40px;
+}
+
+#login .login-page .login-second .mybutton {
+  text-align: center;
+  margin-top: 10%;
+}
+
+#login .login-page .login-second .mybutton a {
+  background-color: #3b53a8;
+  padding: 20px 146px;
+  border-radius: 30px;
+  font-size: 10px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#login .login-page .login-second .mybutton a span {
+  color: white;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  opacity: .8;
+  letter-spacing: 1px;
+}
+
+#login .login-page .login-second .mybutton a:hover {
+  background-color: #425cbb;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#login .login-page .login-second .button-text {
+  margin-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #767676;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+}
+
+#login .login-page .login-second .button-text h6 {
+  font-size: 12px;
+}
+
+#login .login-page .login-second .button-text span {
+  font-size: 11px;
+  margin: 0px 0px 9px 5px;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
