@@ -20,14 +20,15 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="piller-img">
-                        <img src="images/Home-page-images/Home-images/home-img0.png" alt="">
+                        <img class="piller-img1" src="images/Home-page-images/Home-images/home-img0.png" alt="">
+                        <img class="piller-img2" src="images/Home-page-images/Home-images/home-img1.jpg" alt="">
                     </div>
                     <div class="nav-links">
-                        <a href="index.html" target="_blank">HOME</a>
-                        <a href="about.html" target="_blank">ABOUT US</a>
-                        <a href="#">CONTACT</a>
-                        <a href="shop-card.html" target="_blank">SHOP CARD</a>
-                        <a href="login.html" target="_blank">LOGIN</a>
+                        <a href="index.html" target="_blank" class="navslink1">HOME</a>
+                        <a href="about.html" target="_blank" class="navslink2">ABOUT US</a>
+                        <a href="#" class="navslink3">CONTACT</a>
+                        <a href="shop-card.html" target="_blank" class="navslink4">SHOP CARD</a>
+                        <a href="login.html" target="_blank" class="navslink5">LOGIN</a>
                     </div>
                     <div class="icons">
                         <i class="fas fa-search first-icon"></i>
@@ -43,6 +44,60 @@
     <section id="something">
         <div class="container-fluid">
             <div class="row">
+                <div class="your-cart">
+                    <div class="exit-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="header">
+                        <h5>Your Card</h5>
+                    </div>
+                    <ul class="cart-list">
+                        <li class="cart-item">
+                            <div class="icons">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <a href="#">
+                                <img src="images/Home-page-images/Navigation-images/image1.png" alt="">
+                            </a>
+                            <div class="img-text">
+                                <h6>Dave Wool Beanie</h6>
+                                <h4>1 X $39.00</h4>
+                            </div>
+                        </li>
+                        <li class="cart-item">
+                            <div class="icons">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <a href="#">
+                                <img src="images/Home-page-images/Navigation-images/image2.png" alt="">
+                            </a>
+                            <div class="img-text">
+                                <h6>Rose Tinted Glasses</h6>
+                                <h4>1 X $89.00</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="list-end">
+                        <div class="end-text">
+                            <h5>Subtotal:</h5>
+                            <span>$128.00</span>
+                        </div>
+                        <div class="mybutton">
+                            <a href="#">
+                                <span>Checkout now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-overlay" style="display: none;">
+                    <div class="x-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="input">
+                        <i class="fas fa-search"></i>
+                        <input type="search" placeholder="Type your search and hit enter">
+                    </div>
+                </div>
                 <div class="col-lg-12 business-card">
                     <div class="business-image">
                         <div class="overlay"></div>
@@ -92,8 +147,8 @@
                     <div class="card-text">
                         <h1>
                             Connect online</h1>
-                        <p>Email: hello@pillarstudio.net<br>
-                            Twitter: @pillarstudio</p>
+                        <p>Email: <a href="#">hello@pillarstudio.net</a><br>
+                            Twitter: <a href="#">@pillarstudio</a></p>
                     </div>
                 </div>
             </div>
@@ -104,33 +159,33 @@
     <!-- Connection section ended -->
     <section id="reach">
         <div class="container">
-            <div clas="row">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="header">
                         <h2>Or reach us right here…</h2>
                     </div>
-                    <div class="col-lg-12 myinput1">
+                    <div class="col-lg-12 inputs myinput1">
                         <div class="icons">
                             <i class="far fa-user"></i>
                         </div>
-                        <input type="text"  placeholder="Your Name">
+                        <input type="text"  name="intbox" placeholder="Your Name">
                     </div>
-                    <div class="col-lg-12 myinput2">
+                    <div class="col-lg-12 inputs myinput2">
                         <div class="col-lg-6 myinput3">
                             <div class="icons">
                                 <i class="far fa-envelope"></i>
                             </div>
-                            <input type="email" placeholder="Email Address">
+                            <input type="email" name="intbox" placeholder="Email Address">
                         </div>
                         <div class="col-lg-6 myinput4">
                             <div class="icons">
                                 <i class="fas fa-phone-volume"></i>
                             </div>
-                            <input type="text" placeholder="Phone Number">
+                            <input type="text" name="intbox" placeholder="Phone Number">
                         </div>
                     </div>
-                    <div class="col-lg-12 area">
-                        <textarea class="mytextarea" placeholder="Your Message"></textarea>
+                    <div class="col-lg-12 inputs area">
+                        <textarea class="mytextarea" name="intbox" placeholder="Your Message"></textarea>
                     </div>
                     <div class="col-lg-12 button">
                         <div class="mybutton">
@@ -170,8 +225,8 @@
                    <div class="col-lg-4">
                        <div class="recent-card">
                            <span>RECENT NEWS</span>
-                           <p>We have a new template on #Themeforest! Jumpstart is a snappy site template for your next SaaS, app or other software project. Only $10 for a limited time. http://mmra.re/buyjumpstart </p>
-                           <p>Leap Bootstrap Template is now updated with SVG injection. Why manage SVGs the hard way? Launch on time + look on trend with Leap. https://leap.mediumra.re/ </p>
+                           <p>We have a new template on <a href="https://twitter.com/hashtag/Themeforest?src=hash" target="_blank">#Themeforest!</a> Jumpstart is a snappy site template for your next SaaS, app or other software project. Only $10 for a limited time. <a href="https://themeforest.net/item/jumpstart-app-and-software-template/24207799" target="_blank"> http://mmra.re/buyjumpstart </a></p>
+                            <p>Leap Bootstrap Template is now updated with SVG injection. Why manage SVGs the hard way? Launch on time + look on trend with Leap. <a href="https://leap.mediumra.re/" target="_blank">https://leap.mediumra.re/ </a></p>
                        </div>
                    </div>
                    <div class="col-lg-4">
@@ -212,5 +267,11 @@
        </div>
     </section>
    <!-- Footer section ended -->
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script src="js/index.js"></script>
+   <script src="js/contact.js"></script>
 </body>
 </html>

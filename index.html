@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/92b1e9fc18.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="scss/style.css">
 </head>
@@ -17,17 +19,18 @@
     <!-- Navigation section started -->
     <section id="navigation">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row">              
                 <div class="col-lg-12">
                     <div class="piller-img">
-                        <img src="images/Home-page-images/Home-images/home-img0.png" alt="">
+                        <img class="piller-img1" src="images/Home-page-images/Home-images/home-img0.png" alt="">
+                        <img class="piller-img2" src="images/Home-page-images/Home-images/home-img1.jpg" alt="">
                     </div>
                     <div class="nav-links">
-                        <a href="#">HOME</a>
-                        <a href="about.html" target="_blank" >ABOUT US</a>
-                        <a href="contact.html" target="_blank">CONTACT</a>
-                        <a href="shop-card.html" target="_blank">SHOP CARD</a>
-                        <a href="login.html" target="_blank">LOGIN</a>
+                        <a href="#" class="navslink1">HOME</a>
+                        <a href="about.html" target="_blank" class="navslink2" >ABOUT US</a>
+                        <a href="contact.html" target="_blank" class="navslink3">CONTACT</a>
+                        <a href="shop-card.html" target="_blank" class="navslink4">SHOP CARD</a>
+                        <a href="login.html" target="_blank" class="navslink5">LOGIN</a>
                     </div>
                     <div class="icons">
                         <i class="fas fa-search first-icon"></i>
@@ -43,13 +46,66 @@
     <section id="intro">
         <div class="container-fluid">
             <div class="row">
+                <div class="your-cart">
+                    <div class="exit-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="header">
+                        <h5>Your Card</h5>
+                    </div>
+                    <ul class="cart-list">
+                        <li class="cart-item">
+                            <div class="icons">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <a href="#">
+                                <img src="images/Home-page-images/Navigation-images/image1.png" alt="">
+                            </a>
+                            <div class="img-text">
+                                <h6>Dave Wool Beanie</h6>
+                                <h4>1 X $39.00</h4>
+                            </div>
+                        </li>
+                        <li class="cart-item">
+                            <div class="icons">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <a href="#">
+                                <img src="images/Home-page-images/Navigation-images/image2.png" alt="">
+                            </a>
+                            <div class="img-text">
+                                <h6>Rose Tinted Glasses</h6>
+                                <h4>1 X $89.00</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="list-end">
+                        <div class="end-text">
+                            <h5>Subtotal:</h5>
+                            <span>$128.00</span>
+                        </div>
+                        <div class="mybutton">
+                            <a href="#">
+                                <span>Checkout now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-overlay" style="display: none;">
+                    <div class="x-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="input">
+                        <i class="fas fa-search"></i>
+                        <input type="search" placeholder="Type your search and hit enter">
+                    </div>
+                </div>
                 <div class="col-lg-12 image-class">
                     <div class="intro-img"></div>
                     <div class="overlay"></div>
                     <div class="image-text">
                         <div class="image">
-                            <img src="images/Home-page-images/Home-images/home-img1.jpg" alt="">
-                            
+                            <img src="images/Home-page-images/Home-images/home-img1.jpg" alt="">                         
                         </div>
                         <div class="text">
                             <p>A beautiful collection of<br>hand-crafted web components</p>
@@ -74,76 +130,62 @@
     <section id="digital">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 digital">
+                <div class="col-lg-12 digital-card">
                     <div class="header">
                         <h3>Digital, Delivered.</h3>
                         <p>Pillar is a team of passionate designers, developers and artists working in print and digital.</p>
                     </div>
-                    <ul class="digital-list">
-                        <li class="digital-items"><i>Show all </i></li>
-                        <li class="digital-items"><i>Branding </i></li>
-                        <li class="digital-items"><i>Digital </i></li>
-                        <li class="digital-items last-item"><i>Packaging </i></li>
+                    <ul class="button-group filter-button-group">
+                        <li class="digital-items active" data-filter="*">Show all</button>
+                        <li class="digital-items" data-filter=".branding">Branding</button>
+                        <li class="digital-items" data-filter=".digital">Digital</button>
+                        <li class="digital-items last-item" data-filter=".packaging">Packing</button>
                     </ul>
-                    <div class="col-lg-12 digital-images">
-                        <div class="row">
-                            <div class="col-lg-4 kart">
-                                <div class="digital-image">
-                                    <img src="images/Home-page-images/Digital-images/image1.jpg" alt="">
-                                    <div class="overlay">
-                                        <h5>Freehance</h5>
-                                        <span>iOS Application</span>
-                                    </div>
+                    <div class="col-lg-12 grid">
+                        <div class="col-lg-4 grid-item digital">
+                                <img src="images/Home-page-images/Digital-images/image1.jpg" alt="">
+                                <div class="overlay">
+                                    <h5>Freehance</h5>
+                                    <span>iOS Application</span>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 kart">
-                                <div class="digital-image">
-                                    <img src="images/Home-page-images/Digital-images/image2.jpg" alt="">
-                                    <div class="overlay">
-                                        <h5>Michael Andrews</h5>
-                                        <span>Branding & Identity</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 kart">
-                                <div class="digital-image">
-                                    <img src="images/Home-page-images/Digital-images/image3.jpg" alt="">
-                                    <div class="overlay">
-                                        <h5>Pillar Stationary</h5>
-                                        <span>Branding Collateral</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4 kart">
-                                <div class="digital-image">
-                                    <img src="images/Home-page-images/Digital-images/image4.jpg" alt="">
-                                    <div class="overlay">
-                                        <h5>Authentic Apparel</h5>
-                                        <span>Packaging Design</span>
-                                    </div>
+                        <div class="col-lg-4 grid-item branding">
+                                <img src="images/Home-page-images/Digital-images/image2.jpg" alt="">
+                                <div class="overlay">
+                                    <h5>Michael Andrews</h5>
+                                    <span>Branding & Identity</span>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 kart">
-                                <div class="digital-image">
-                                    <img src="images/Home-page-images/Digital-images/image5.jpg" alt="">
-                                    <div class="overlay">
-                                        <h5>Wave Poster</h5>
-                                        <span>Logo Design</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 kart">
-                                <div class="digital-image">
-                                    <img src="images/Home-page-images/Digital-images/image6.jpg" alt="">
-                                    <div class="overlay">
-                                        <h5>Tesla Controller</h5>
-                                        <span>Apple Watch Application</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                        <div class="col-lg-4 grid-item branding">
+                                <img src="images/Home-page-images/Digital-images/image3.jpg" alt="">
+                                <div class="overlay">
+                                    <h5>Pillar Stationary</h5>
+                                    <span>Branding Collateral</span>
+                                </div>
+                        </div>
+
+                        <div class="col-lg-4 grid-item packaging">
+                                <img src="images/Home-page-images/Digital-images/image4.jpg" alt="">
+                                <div class="overlay">
+                                    <h5>Authentic Apparel</h5>
+                                    <span>Packaging Design</span>
+                                </div>
+                        </div>
+                        <div class="col-lg-4 grid-item branding">
+                                <img src="images/Home-page-images/Digital-images/image5.jpg" alt="">
+                                <div class="overlay">
+                                    <h5>Wave Poster</h5>
+                                    <span>Logo Design</span>
+                                </div>
+                        </div>
+                        <div class="col-lg-4 grid-item digital">
+                                <img src="images/Home-page-images/Digital-images/image6.jpg" alt="">
+                                <div class="overlay">
+                                    <h5>Tesla Controller</h5>
+                                    <span>Apple Watch Application</span>
+                                </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -396,7 +438,7 @@
                     </div>
                    </div>
                    <div class="mybutton">
-                       <button><h1>VIEW THE BLOG</h1></button>
+                       <a href="http://pillar.mediumra.re/blog-cards-small.html" target="_blank"><h1>VIEW THE BLOG</h1></a>
                    </div>
                 </div>
             </div>
@@ -409,12 +451,12 @@
          <div class="container">
              <div class="row">
                  <div class="col-lg-12">
-                        <div class="slide-inner">
-                          <div class="slide-item active">
+                    <div class="owl-carousel">
+                        <div class="slide-item">
                             <img src="images/Home-page-images/Carousel-images/image1.png">
                           </div>
                           <div class="slide-item">
-                            <img src="images/Home-page-images/Carousel-images/image2.png" style="width: 20%;">
+                            <img src="images/Home-page-images/Carousel-images/image2.png" style="width: 18%;">
                           </div>
                           <div class="slide-item">
                             <img src="images/Home-page-images/Carousel-images/image3.png">
@@ -429,9 +471,9 @@
                             <img src="images/Home-page-images/Carousel-images/image6.png">
                           </div>
                           <div class="slide-item">
-                            <img src="images/Home-page-images/Carousel-images/image7.png" style="width: 20%;">
-                          </div>
+                            <img src="images/Home-page-images/Carousel-images/image7.png" style="width: 15%;">
                         </div>
+                    </div> 
                  </div>
              </div>
          </div>
@@ -446,7 +488,7 @@
                      <div class="interested-text">
                          <p>Interested in working with Pillar? </p>
                          <div class="mybutton">
-                            <a>
+                            <a href="shop-card.html" target="_blank">
                                 <span>LET'S TALK TURKEY</span>
                             </a>
                         </div>
@@ -482,8 +524,8 @@
                     <div class="col-lg-4">
                         <div class="recent-card">
                             <span>RECENT NEWS</span>
-                            <p>We have a new template on #Themeforest! Jumpstart is a snappy site template for your next SaaS, app or other software project. Only $10 for a limited time. http://mmra.re/buyjumpstart </p>
-                            <p>Leap Bootstrap Template is now updated with SVG injection. Why manage SVGs the hard way? Launch on time + look on trend with Leap. https://leap.mediumra.re/ </p>
+                            <p>We have a new template on <a href="https://twitter.com/hashtag/Themeforest?src=hash" target="_blank">#Themeforest!</a> Jumpstart is a snappy site template for your next SaaS, app or other software project. Only $10 for a limited time. <a href="https://themeforest.net/item/jumpstart-app-and-software-template/24207799" target="_blank"> http://mmra.re/buyjumpstart </a></p>
+                            <p>Leap Bootstrap Template is now updated with SVG injection. Why manage SVGs the hard way? Launch on time + look on trend with Leap. <a href="https://leap.mediumra.re/" target="_blank">https://leap.mediumra.re/ </a></p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -491,7 +533,7 @@
                             <span>SUBSCRIBE</span>
                             <p>Get monthly updates and free resources.</p>
                             <div class="int-btn">
-                                <input type="text" placeholder="Email Address">
+                                <input type="text" class="intro2input" placeholder="Email Address">
                                 <a href="#">GO</a>
                             </div>
                             <h1>CONNECT WITH US</h1>
@@ -506,7 +548,7 @@
                         </div>
                     </div>  
                     <div class="footer-icon">
-                        <a href="#top">
+                        <a href="#" class="totop">
                             <i class="fas fa-chevron-up"></i>
                         </a>
                     </div>                 
@@ -514,6 +556,7 @@
              </div>
          </div>
         </section>
+
     <section id="footer-end">
         <div class="container">
             <div class="col-lg-12">
@@ -524,8 +567,13 @@
         </div>
         </section>
     <!-- Footer section ended -->
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

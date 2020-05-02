@@ -40,7 +40,217 @@
 //SHOP-CARD SECTION's CSS STARTED-->
 #shop-card{
     padding: 150px;
-    .header{
+    .your-cart{
+        position: fixed;
+        right: -420px;
+        top: 0px;
+        z-index: 999;
+        background-color: white;
+        padding: 30px;
+        width: 30%;
+        height: 100%;
+        transition: all .3s;
+        opacity: 1;
+        .exit-icon{
+            position: absolute;
+            top: 4%;
+            right: 5%;
+            border-radius: 50%;
+            background-color: #232323;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            opacity: .8;
+            cursor: pointer;
+            i{
+                color: white;
+                opacity: .9;
+                font-size: 18px;
+            }
+            &:hover{
+                background-color: black;
+                opacity: 1;
+                transition: all .2s;
+            }
+        }
+        .header{
+            margin-bottom: 20%;
+            h5{
+                color: #343434;
+                font-size: 19px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: 13%;
+                left: 5%;
+                width: 90%;
+                height: 1px;
+                background-color: #767676;
+                opacity: .1;
+            }
+        }
+        .cart-list{
+            list-style: none;
+            padding: 0px;
+            overflow-y: scroll;
+            .cart-item{
+                display: flex;
+                margin-bottom: 15%;
+                .icons{
+                    position: absolute;
+                    right: 17%;
+                    i{
+                        font-size: 20px;
+                        color: #767676;
+                        opacity: .3;
+                        cursor: pointer;
+                        &:hover{
+                            opacity: .8;
+                            transition: all .2s;
+                        }
+                    }
+                }
+                a{
+
+                    img{
+                        max-width: 100%;
+                        width: 85px;
+                        margin-top: 10%;
+                    }
+                }
+                .img-text{
+                    color: #767676;
+                    padding-top: 26px;
+                    padding-left: 30px;
+                    h6{
+                        font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                        margin-bottom: 17px;
+                    }
+                    h4{
+                        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                        font-size: 11px;
+                        color: black;
+                        opacity: .9;
+                    }
+                }
+            }
+        }
+        .list-end{
+            margin-top: 15%;
+            .end-text{
+                display: flex;
+                h5{
+                    font-size: 18px;
+                    color: #343434;
+                    font-weight: 700;
+                    opacity: .8;
+                }
+                span{
+                    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                    color: #767676;
+                    margin-left: 20px;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 37%;
+                    left: 5%;
+                    width: 90%;
+                    height: 1px;
+                    background-color: #767676;
+                    opacity: .1;
+                }
+            }
+            .mybutton{
+                display: flex;
+                justify-content: center;
+                a{
+                    background-color: #425cbb;
+                    padding: 12px 60px 17px 60px;
+                    margin-top: 10%;
+                    span{
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        letter-spacing: 1px;
+                        color: white;
+                        opacity: .9;
+                    }
+                }
+            }
+        }
+    }
+    .intro-overlay{
+        position: fixed;
+        width: 100%;
+        height: 102%;
+        background-color: black;
+        opacity: .8;
+        top: -3px;
+        left: 0px;
+        z-index: 99999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+        .x-icon{
+            position: absolute;
+            top: 0;
+            right: 0px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 30px;
+            color: rgba(255, 255, 255, 0.3);
+            
+            i{
+                transition: all .2s;
+                cursor: pointer;
+                &:hover{
+                    color: white;
+                    transition: all .2s;
+                }
+            }
+        }
+        .input{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &:focus{
+                outline: 0;
+            }
+            i{
+                padding: 15px 0px 15px 15px;
+                font-size: 30px;
+                color: white;
+                background-color: rgba(255, 255, 255, 0.3);
+                width: 60px;
+                height: 60px;
+                line-height: 37px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px 0px 0px 30px;
+            }
+            input{
+                width: 50%;
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 0px 30px 30px 0px;
+                padding: 15px 10px;
+                border: 2px solid transparent;
+                &:focus{
+                    outline: 0;
+                }
+                &::placeholder{
+                    color: rgb(231, 224, 224);
+                    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                    font-style: italic;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .shop-header{
         text-align: center;
         h1{
             font-size: 65px;
@@ -53,14 +263,14 @@
             font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
         }
     }
-    ul{
+    .button-group{
         list-style: none;
         display: flex;
         justify-content: center;
         margin: 5% 0px;
         font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
         font-style: italic;
-        li{
+        .shop-items{
             margin: 10px 5px;
             opacity: .4;
             transition: all .2s;
@@ -75,60 +285,71 @@
                 transition: all .2s;
             }
         }
+        .last-item{
+            &::after{
+                content: " ";
+            }
+        }
+        .active{
+            opacity: .9;
+        }
     }
-    .shop-card-cards{
+    .grid{
+        padding: 0px;
+        .grid-item{
 
-        .shop-card-card{
-            margin-bottom: 30px;
-            transition: all .2s;
-            cursor: pointer;
-            .shop-card-image{
-
-                img{
-                    max-width: 100%;
-                }
-            }
-            .shop-card-text{
-                background-color: white;
-                padding: 40px;
-                .first-part{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: flex-end;
-                    h1{
-                        font-size: 11px;
-                        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
-                        text-transform: uppercase;
-                        opacity: .3;
-                    }
-                    h2{
-                        font-size: 16px;
-                        font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
-                        text-decoration-line: line-through;
-                    }
-                    h3{
-                        font-size: 20px;
-                        font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
-                        opacity: .7;
-                    }
-                }
-                .second-part{
-                    display: flex;
-                    justify-content: space-between;
-                    h1{
-                        font-size: 17px;
-                        font-weight: bold;
-                    }
-                    h2{
-                        font-size: 16px;
-                        font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
-                        opacity: .7;
-                    }
-                }
-            }
-            &:hover{
-                box-shadow: 0px 0px 25px 0px rgb(228, 226, 226);
+            .shop-card-card{
+                margin-bottom: 30px;
                 transition: all .2s;
+                cursor: pointer;
+                .shop-card-image{
+    
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .shop-card-text{
+                    background-color: white;
+                    padding: 40px;
+                    .first-part{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        h1{
+                            font-size: 11px;
+                            font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+                            text-transform: uppercase;
+                            opacity: .3;
+                        }
+                        h2{
+                            font-size: 16px;
+                            font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                            text-decoration-line: line-through;
+                        }
+                        h3{
+                            font-size: 20px;
+                            font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                            opacity: .7;
+                        }
+                    }
+                    .second-part{
+                        display: flex;
+                        justify-content: space-between;
+                        h1{
+                            font-size: 17px;
+                            font-weight: bold;
+                        }
+                        h2{
+                            font-size: 16px;
+                            font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+                            opacity: .7;
+                        }
+                    }
+                }
+                &:hover{
+                    box-shadow: 0px 0px 25px 0px rgb(228, 226, 226);
+                    transition: all .2s;
+                }
             }
         }
     }
@@ -175,35 +396,4 @@
     }
 }
 //SHOP-CARD SECTION's CSS ENDED-->
-#footer{
-        
-    .footer-icon{
-           
-        a{
-            display: inline-block;
-            position: absolute;
-            bottom: -30%;
-            right: 12%;
-            background-color: #3d3d3d;
-            padding: 15px 20px;
-            border-radius: 50%;
-            opacity: 2;
-            z-index: 9;
-            transition: all .2s;
-            i{
-                color: white;
-                transition: all .2s;
-            }
-            &:hover{
-                bottom: -28%;
-                transition: all .2s;
-            }
-        }
-        
-    }
-    span{
-        color: white;
-        opacity: .3;
-        font-size: 15px;
-    }
-}
+
