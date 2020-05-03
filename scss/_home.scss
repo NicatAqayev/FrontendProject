@@ -200,17 +200,20 @@
             .mybutton{
                 display: flex;
                 justify-content: center;
-                a{
+                .watch{
                     background-color: #425cbb;
                     padding: 12px 60px 17px 60px;
                     margin-top: 10%;
+                    &:hover{
+                        text-decoration: none;
+                    }
                     span{
                         text-transform: uppercase;
                         font-size: 11px;
                         letter-spacing: 1px;
                         color: white;
-                        opacity: .9;
-                    }
+                        opacity: .9;                      
+                    }                  
                 }
             }
         }
@@ -1030,7 +1033,7 @@
             border-radius: 50%;
             opacity: 2;
             z-index: 9;
-            transition: all 1s;
+            transition: all .2s;
             i{
                 color: white;
                 transition: all .2s;

@@ -25,3 +25,14 @@ yourCart.style.right = "0px";
 yourCart.style.transition = "all .5s";
 });
 //INTRO BAG-ICON FUNCTION ENDED
+
+//ON CLICK SCROLL TO TOP FUNCTION STARTED
+var toTop = document.querySelector("#footer .footer-icon .totop");
+toTop.addEventListener("click", function(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+});
+//ON  CLICK SCROLL TO TOP FUNCTION ENDED

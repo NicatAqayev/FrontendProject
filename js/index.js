@@ -78,7 +78,6 @@ navFunc();
  });
 //INTRO BAG-ICON FUNCTION ENDED
 
-
 //OWL-CAROUSEL FUNCTION STARTED
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
@@ -114,11 +113,16 @@ var liList =  document.querySelectorAll("#digital .button-group .digital-items")
 //ADD AND REMOVE ACTIVE CLASS ENDED
 
 
-
-    
-
-
-
+//ON CLICK SCROLL TO TOP FUNCTION STARTED
+  var toTop = document.querySelector("#footer .footer-icon .totop");
+   toTop.addEventListener("click", function(){
+       window.scrollTo({
+           top: 0,
+           left: 0,
+           behavior: "smooth"
+       });
+   });
+//ON  CLICK SCROLL TO TOP FUNCTION ENDED
 
 //MASONRY FILTER STARTED
 $('.grid').isotope({
@@ -136,13 +140,9 @@ var $grid = $('.grid').isotope({
       columnWidth: 200
     }
   });
-
 $grid.isotope({ filter: '.branding' });
-
 $grid.isotope({ filter: '.digital' });
-
 $grid.isotope({ filter: '.packaging' });
-
 $grid.isotope({ filter: '*' });
 
   $('.filter-button-group').on( 'click', 'li', function() {

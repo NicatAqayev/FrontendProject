@@ -26,7 +26,6 @@ yourCart.style.transition = "all .5s";
 });
 //INTRO BAG-ICON FUNCTION ENDED
 
-
 //ADD AND REMOVE ACTIVE CLASS FUNCTION STARTED
 var ulList = document.querySelector("#shop-card .button-group");
 var liList =  document.querySelectorAll("#shop-card .button-group .shop-items");
@@ -37,8 +36,6 @@ var liList =  document.querySelectorAll("#shop-card .button-group .shop-items");
         });
     });
 //ADD AND REMOVE ACTIVE CLASS FUNCTION ENDED
-
-
 
 //JQUERY ISOTOPE STARTED
 $('.grid').isotope({
@@ -56,13 +53,9 @@ var $grid = $('.grid').isotope({
       columnWidth: 200
     }
   });
-
 $grid.isotope({ filter: '.accessories' });
-
 $grid.isotope({ filter: '.apparel' });
-
 $grid.isotope({ filter: '.bags' });
-
 $grid.isotope({ filter: '*' });
 
   $('.filter-button-group').on( 'click', 'li', function() {
@@ -70,3 +63,14 @@ $grid.isotope({ filter: '*' });
     $grid.isotope({ filter: filterValue });
   });
   //JQUERY ISOTOPE ENDED
+
+  //ON CLICK SCROLL TO TOP FUNCTION STARTED
+  var toTop = document.querySelector("#footer .footer-icon .totop");
+   toTop.addEventListener("click", function(){
+       window.scrollTo({
+           top: 0,
+           left: 0,
+           behavior: "smooth"
+       });
+   });
+//ON  CLICK SCROLL TO TOP FUNCTION ENDED

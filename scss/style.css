@@ -236,13 +236,17 @@
           justify-content: center;
 }
 
-#intro .your-cart .list-end .mybutton a {
+#intro .your-cart .list-end .mybutton .watch {
   background-color: #425cbb;
   padding: 12px 60px 17px 60px;
   margin-top: 10%;
 }
 
-#intro .your-cart .list-end .mybutton a span {
+#intro .your-cart .list-end .mybutton .watch:hover {
+  text-decoration: none;
+}
+
+#intro .your-cart .list-end .mybutton .watch span {
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 1px;
@@ -1240,8 +1244,8 @@
   border-radius: 50%;
   opacity: 2;
   z-index: 9;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 #footer .footer-icon .totop i {

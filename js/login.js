@@ -50,3 +50,14 @@ var checkBox = document.querySelector("#login .login-page .login-second .input-c
         this.style.transition = "all .3s";
     });
 //ADD AND REMOVE CHECK-BOX ELEMENT ON CLICK FUNCTION ENDED
+
+//ON CLICK SCROLL TO TOP FUNCTION STARTED
+var toTop = document.querySelector("#footer .footer-icon .totop");
+toTop.addEventListener("click", function(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+});
+//ON  CLICK SCROLL TO TOP FUNCTION ENDED
